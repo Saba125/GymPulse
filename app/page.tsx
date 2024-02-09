@@ -1,3 +1,4 @@
+import ContactUs from "@/components/Contact-us/Contact-us";
 import Hero from "@/components/Hero/Hero";
 import Sponsors from "@/components/Sponsors";
 import Benefits from "@/components/benefits/Benefits";
@@ -10,6 +11,7 @@ export default function Home() {
       <Sponsors />
       <Benefits />
       <Descript />
+      <ContactUs />
     </div>
   );
 }
