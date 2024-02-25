@@ -34,49 +34,60 @@ const ContactUs = () => {
   return (
     <div className="mt-10">
       <Container>
-        <h3 className="font-montserrat flex items-center gap-3  text-3xl font-bold ">
-          <span className="text-rose-500">JOIN NOW</span>
-          TO GET IN SHAPE
-        </h3>
-        <p className="my-5">
-          Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-          sapien vel rhoncus. Placerat at in enim pellentesque. Nulla adipiscing
-          leo egestas nisi elit risus sit. Nunc cursus sagittis.
-        </p>
-        <div className="max-w-md">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <Input placeholder="Enter name" {...field} />
-                    </FormControl>
+        <div className="flex flex-col items-center  justify-between gap-6  md:flex-row">
+          <div className="flex-1">
+            <h3 className="font-montserrat flex items-center gap-3  text-3xl font-bold ">
+              <span className="text-rose-500">JOIN NOW</span>
+              TO GET IN SHAPE
+            </h3>
+            <p className="my-5">
+              Congue adipiscing risus commodo placerat. Tellus et in feugiat
+              nisl sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
+              adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+            </p>
 
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <Input placeholder="Enter email" {...field} />
-                    </FormControl>
+            <div className="max-w-md">
+              <Form {...form}>
+                <form
+                  onSubmit={form.handleSubmit(onSubmit)}
+                  className="space-y-8"
+                >
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormControl>
+                          <Input placeholder="Enter name" {...field} />
+                        </FormControl>
 
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button variant="warning" type="submit">
-                Submit
-              </Button>
-            </form>
-          </Form>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormControl>
+                          <Input placeholder="Enter email" {...field} />
+                        </FormControl>
+
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button variant="warning" type="submit">
+                    Submit
+                  </Button>
+                </form>
+              </Form>
+            </div>
+          </div>
+          <div className="flex-1">
+            <img src="/ContactUsPageGraphic.png" />
+          </div>
         </div>
       </Container>
     </div>

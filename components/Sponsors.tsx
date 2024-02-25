@@ -1,5 +1,4 @@
 import Container from "./Container";
-
 const Sponsors = () => {
   return (
     <div className="hidden w-full bg-[#DBBEBDFF] py-16 md:block">
